@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+  <style> .box { fill:#f5f7fb; stroke:#2b6cb0; stroke-width:2 } .label { font:14px sans-serif; fill:#1a202c } .small { font:12px sans-serif; fill:#4a5568 } </style>
+  <rect x="30" y="40" width="160" height="60" rx="6" class="box"/>
+  <text x="110" y="70" text-anchor="middle" class="label">Admin Banner</text>
+  <text x="110" y="88" text-anchor="middle" class="small">flash_banner.json</text>
+
+  <rect x="260" y="40" width="160" height="60" rx="6" class="box"/>
+  <text x="340" y="70" text-anchor="middle" class="label">Task Scheduler</text>
+  <text x="340" y="88" text-anchor="middle" class="small">run_drop_scheduler.ps1</text>
+
+  <rect x="490" y="40" width="160" height="60" rx="6" class="box"/>
+  <text x="570" y="70" text-anchor="middle" class="label">Drop Scheduler</text>
+  <text x="570" y="88" text-anchor="middle" class="small">drop_scheduler.php</text>
+
+  <rect x="260" y="150" width="160" height="60" rx="6" class="box"/>
+  <text x="340" y="180" text-anchor="middle" class="label">Watchdog</text>
+  <text x="340" y="198" text-anchor="middle" class="small">scheduler_watchdog.ps1</text>
+
+  <rect x="490" y="150" width="160" height="60" rx="6" class="box"/>
+  <text x="570" y="180" text-anchor="middle" class="label">Failsafe</text>
+  <text x="570" y="198" text-anchor="middle" class="small">auto_revert_failsafe.ps1</text>
+
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2b6cb0"/>
+    </marker>
+  </defs>
+  <line x1="190" y1="70" x2="260" y2="70" stroke="#2b6cb0" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="420" y1="70" x2="490" y2="70" stroke="#2b6cb0" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="420" y1="90" x2="420" y2="150" stroke="#2b6cb0" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="650" y1="90" x2="650" y2="150" stroke="#2b6cb0" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Webhook / Storefront -->
+  <rect x="640" y="220" width="120" height="50" rx="6" class="box"/>
+  <text x="700" y="250" text-anchor="middle" class="label">Storefront</text>
+  <text x="700" y="268" text-anchor="middle" class="small">banner & waitlist</text>
+
+  <line x1="570" y1="180" x2="700" y2="220" stroke="#2b6cb0" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="340" y1="180" x2="700" y2="220" stroke="#2b6cb0" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <text x="400" y="20" class="small">Drop Scheduler Flow (high-level)</text>
+</svg>
