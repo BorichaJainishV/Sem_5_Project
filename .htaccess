@@ -1,0 +1,10 @@
+AddType application/javascript .js
+AddType text/javascript .mjs
+
+<FilesMatch "\.(js|mjs)$">
+    Header set Content-Type "application/javascript"
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>

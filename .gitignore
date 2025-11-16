@@ -1,0 +1,39 @@
+# Recommended .gitignore for Sem_5_Project (PHP + XAMPP)
+
+# Environment / secrets
+.env
+.env.local
+db_connection.php
+
+# Composer / dependencies (vendor should be installed on the server or via CI)
+/vendor/
+/composer.phar
+
+# Runtime storage and uploads (application state, generated files)
+/storage/
+/uploads/
+
+# IDE/editor
+/.idea/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Node
+/node_modules/
+
+# Logs and caches
+*.log
+phpunit.xml.result
+.phpunit.result.cache
+coverage/
+
+# Build / temp
+*.tmp
+*.swp
+
+# Misc
+composer.phar
+/.history/
